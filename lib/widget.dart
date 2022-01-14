@@ -9,7 +9,7 @@ Color bgc = const Color(0xffa2bfbd);
 class GoodMorning extends StatelessWidget {
   const GoodMorning({
     Key key,
-    @required this.size,
+     this.size,
   }) : super(key: key);
 
   final Size size;
@@ -122,7 +122,7 @@ class SecondList extends StatelessWidget {
 class Lucknow extends StatelessWidget {
   const Lucknow({
     Key key,
-    @required this.lucknowdata,
+     this.lucknowdata,
   }) : super(key: key);
 
   final List lucknowdata;
@@ -289,7 +289,7 @@ class Lucknow extends StatelessWidget {
 class Searchresult extends StatelessWidget {
   const Searchresult({
     Key key,
-    @required this.weatherdata,
+     this.weatherdata,
   }) : super(key: key);
 
   final List weatherdata;

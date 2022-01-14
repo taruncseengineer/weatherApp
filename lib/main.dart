@@ -12,7 +12,7 @@ void main() async {
   runApp(WeatherApp());
 }
 
-// default key= 3b43dbbec4befe51328eb77475fe899e
+
 class WeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
