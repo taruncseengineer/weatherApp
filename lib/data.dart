@@ -23,9 +23,7 @@ class _ExampleState extends State<Example> {
   bool loading = false;
   Map<String, dynamic> apidata;
   Future fetchdata(String input) async {
-    String url = "https://api.weatherbit.io/v2.0/current?city=" +
-        input +
-        ",IN&key=value";
+    String url = "";
     try {
       var res = await http.get(url);
       if (res.statusCode == 200) {
@@ -49,7 +47,7 @@ class _ExampleState extends State<Example> {
   List lucknowdata;
   Future lucknowfetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Lucknow,IN&key=value";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -63,7 +61,7 @@ class _ExampleState extends State<Example> {
   List delhidata;
   Future delhifetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Delhi,IN&key=value";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -76,7 +74,7 @@ class _ExampleState extends State<Example> {
   List kolkatadata;
   Future kolkatafetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Kolkata,IN&key=value";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -89,7 +87,7 @@ class _ExampleState extends State<Example> {
   List bihardata;
   Future biharfetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Bihar,IN&key=";
+        "=";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -102,7 +100,7 @@ class _ExampleState extends State<Example> {
   List chandigarhdata;
   Future chandigarhfetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Chandigarh,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -115,7 +113,7 @@ class _ExampleState extends State<Example> {
   List bengalurudata;
   Future bengalurufetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Bengaluru,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -128,7 +126,7 @@ class _ExampleState extends State<Example> {
   List mumbaidata;
   Future mumbaifetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Mumbai,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -141,7 +139,7 @@ class _ExampleState extends State<Example> {
   List jaipurdata;
   Future jaipurfetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Jaipur,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -154,7 +152,7 @@ class _ExampleState extends State<Example> {
   List chennaidata;
   Future chennaifetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Chennai,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
@@ -167,7 +165,7 @@ class _ExampleState extends State<Example> {
   List bhopaldata;
   Future bhopalfetchdata() async {
     String lucknowurl =
-        "https://api.weatherbit.io/v2.0/current?city=Bhopal,IN&key=";
+        "";
     var lucknowres = await http.get(lucknowurl);
     if (lucknowres.statusCode == 200) {
       var jsondata = json.decode(lucknowres.body);
