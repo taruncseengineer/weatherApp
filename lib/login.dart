@@ -32,40 +32,7 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  // final GoogleSignIn _googleSignIn = GoogleSignIn();
-  // final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-
-  // String name;
-  // String emailgoogle;
-  // String photoUrl;
-  // Future<String> googlesignin() async {
-  //   final GoogleSignInAccount googleSignInAccount =
-  //       await _googleSignIn.signIn();
-  //   final GoogleSignInAuthentication googleSignInAuthentication =
-  //       await googleSignInAccount.authentication;
-  //   final AuthCredential authCredential = GoogleAuthProvider.credential(
-  //       accessToken: googleSignInAuthentication.accessToken,
-  //       idToken: googleSignInAuthentication.idToken);
-  //   final UserCredential userCredential =
-  //       await _firebaseAuth.signInWithCredential(authCredential);
-  //   final User user = userCredential.user;
-  //   assert(user.displayName != null);
-  //   assert(user.email != null);
-  //   assert(user.photoURL != null);
-  //   if (userCredential != null) {
-  //     Navigator.push(
-  //         context, MaterialPageRoute(builder: (context) => Example()));
-  //   }
-  //   setState(() {
-  //     name = user.displayName;
-  //     emailgoogle = user.email;
-  //     photoUrl = user.photoURL;
-  //   });
-  //   final User currentUser = await _firebaseAuth.currentUser;
-  //   assert(currentUser.uid == user.uid);
-  //   return "Login";
-  // }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,29 +108,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 10,
               ),
-              // InkWell(
-              //   onTap: () => googlesignin(),
-              //   child: Container(
-              //     decoration: BoxDecoration(
-              //       borderRadius: BorderRadius.circular(16),
-              //       color: Colors.cyanAccent,
-              //     ),
-              //     height: 50,
-              //     width: MediaQuery.of(context).size.width * 0.8,
-              //     child: Row(
-              //       children: [
-              //         Text("G"),
-              //         SizedBox(
-              //           width: 10,
-              //         ),
-              //         Text("Continue with Google")
-              //       ],
-              //     ),
-              //   ),
-              // ),
-              // SizedBox(
-              //   height: 10,
-              // ),
+             
               Container(
                 padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
