@@ -31,53 +31,6 @@ class _SignUpState extends State<SignUp> {
     assert(user1.uid == user.uid);
   }
 
-  // final GoogleSignIn _googleSignIn = GoogleSignIn();
-  // final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-
-  // String name;
-  // String emailgoogle;
-  // String photoUrl;
-  // Future<String> googlesignin() async {
-  //   final GoogleSignInAccount googleSignInAccount =
-  //       await _googleSignIn.signIn();
-  //   final GoogleSignInAuthentication googleSignInAuthentication =
-  //       await googleSignInAccount.authentication;
-  //   final AuthCredential authCredential = GoogleAuthProvider.credential(
-  //       accessToken: googleSignInAuthentication.accessToken,
-  //       idToken: googleSignInAuthentication.idToken);
-  //   final UserCredential userCredential =
-  //       await _firebaseAuth.signInWithCredential(authCredential);
-  //   final User user = userCredential.user;
-  //   assert(user.displayName != null);
-  //   assert(user.email != null);
-  //   assert(user.photoURL != null);
-  //   if (userCredential != null) {
-  //     Navigator.push(
-  //         context, MaterialPageRoute(builder: (context) => Example()));
-  //   }
-  //   setState(() {
-  //     name = user.displayName;
-  //     emailgoogle = user.email;
-  //     photoUrl = user.photoURL;
-  //   });
-  //   final User currentUser = await _firebaseAuth.currentUser;
-  //   assert(currentUser.uid == user.uid);
-  //   return "Login";
-  // }
-
-  // final FacebookAuth _facebookAuth = FacebookAuth.instance;
-  // Future<String> _facebooklogin() async {
-  //   final LoginResult result = await _facebookAuth.login();
-  //   final FacebookAuthCredential facebookAuthCredential =
-  //       FacebookAuthProvider.credential(result.accessToken.token);
-  //   final UserCredential userCredential =
-  //       await _auth.signInWithCredential(facebookAuthCredential);
-  //   if (userCredential != null) {
-  //     Navigator.push(
-  //         context, MaterialPageRoute(builder: (context) => Example()));
-  //   }
-  //   return "Log In";
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -267,35 +220,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
-              // Container(
-              //   height: 80,
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       InkWell(
-              //         onTap: () => googlesignin(),
-              //         child: CircleAvatar(
-              //           radius: 27,
-              //           backgroundColor: Colors.white,
-              //           backgroundImage:
-              //               AssetImage("assets/images/social1.png"),
-              //         ),
-              //       ),
-              //       SizedBox(
-              //         width: 20,
-              //       ),
-              //       // InkWell(
-              //       //   onTap: () => _facebooklogin(),
-              //       //   child: CircleAvatar(
-              //       //     radius: 27,
-              //       //     backgroundColor: Colors.white,
-              //       //     backgroundImage:
-              //       //         AssetImage("assets/images/social2.png"),
-              //       //   ),
-              //       // )
-              //     ],
-              //   ),
-              // )
+              
             ],
           ),
         ),
